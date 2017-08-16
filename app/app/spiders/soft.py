@@ -74,8 +74,8 @@ class SoftSpider(CrawlSpider):
 		score = response.xpath('//span[@class="s-1 js-votepanel"]/text()').extract_first()
 
 		span = response.xpath('//span[@class="s-3"]/text()').extract()
-		down_num = span[0] if span else ''
-		size = span[1] if span else ''
+		down_num = span[0] if span and len(span)==2 else ''
+		size = span[1] if span and len(span)==2 else ''
 
 		remark = response.xpath('//*[@id="app-info-panel"]/div/dl/dd/p/text()').extract_first()
 
@@ -111,11 +111,11 @@ class SoftSpider(CrawlSpider):
 		overview = str(response.xpath('//*[@id="html-brief"]//img/@src|//div[@class="overview"]/img/@src').extract())
 
 		base_info = response.xpath('//div[@class="base-info"]/table/tbody/tr/td/text()').extract()
-		auth = base_info[0] if base_info else ''
-		update_time = base_info[1] if base_info else ''
-		version = base_info[2] if base_info else ''
-		sys = base_info[3] if base_info else ''
-		lang = base_info[4] if base_info else ''
+		auth = base_info[0] if base_info and len(base_info)==5 else ''
+		update_time = base_info[1] if base_info and len(base_info)==5 else ''
+		version = base_info[2] if base_info and len(base_info)==5 else ''
+		sys = base_info[3] if base_info and len(base_info)==5 else ''
+		lang = base_info[4] if base_info and len(base_info)==5 else ''
 
 		tag = str(response.xpath('//div[@class="app-tags"]/a/text()').extract())
 
