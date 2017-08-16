@@ -32,7 +32,7 @@ class MysqlPipeline(object):
 			)
 			self.cursor.execute(sql, args=args)
 			self.conn.commit()
-			print(str(item['app_id']) + ' app')
+			print(str(item['app_id']))
 		# print(str(item['app_id']))
 
 		elif isinstance(item, LikeItem):
