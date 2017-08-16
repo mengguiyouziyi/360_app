@@ -12,28 +12,24 @@ from random import choice
 proxyServer = "http://proxy.abuyun.com:9020"
 
 # 1
-proxyUser = "H29A85A238Y92VZD"
-proxyPass = "9EB477D3447C3F31"
+proxyUser = "HFE1U7J80076EKWD"
+proxyPass = "39E53297BE82AEA6"
 
 # 2
-# proxyUser = "H8J738EHR4H5GE5D"
-# proxyPass = "3018672C5A167A3D"
+# proxyUser = "HGJ3233ZHQ21680D"
+# proxyPass = "C69FE010F7C5B14E"
 
 # 3
-# proxyUser = "HWAP93ES770B921D"
-# proxyPass = "FD67384CCCADBF04"
+# proxyUser = "H2R4K25D5KITV1SD"
+# proxyPass = "BD8E1C7F384AF1BA"
 
 # 4
-# proxyUser = "H24CFQ64JP06V1WD"
-# proxyPass = "FA1D98DF8F3E55FF"
+# proxyUser = "HU382OU308UQFR9D"
+# proxyPass = "D5AD3D3FF4383DFC"
 
 # 5
-# proxyUser = "HQ78N3Y82239165D"
-# proxyPass = "AA99073C3271DBFA"
-
-# 6
-# proxyUser = "H8963415MP59046D"
-# proxyPass = "6C586451622880CB"
+# proxyUser = "H4W4C128D84D39ID"
+# proxyPass = "AE0738C61F7324E4"
 
 
 # for Python3
