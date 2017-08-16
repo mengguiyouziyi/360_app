@@ -102,6 +102,9 @@ class SoftSpider(CrawlSpider):
 		elif '/soft/' == cat:
 			app_cat = 'soft'
 
+		else:
+			app_cat = ''
+
 		des1 = response.xpath('//*[@id="html-brief"]/p/text()|//*[@id="sdesc"]/div[@class="breif"]/text()').extract()
 		x = [d.strip() for d in des1]
 		des = ''.join(x) if des1 else ''
